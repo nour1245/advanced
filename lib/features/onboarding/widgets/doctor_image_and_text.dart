@@ -1,4 +1,5 @@
 import 'package:advanced/core/themeing/styles.dart';
+import 'package:advanced/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -26,8 +27,8 @@ class DoctorImageAndText extends StatelessWidget {
           right: 0,
           left: 0,
           child: Text(
-            'Best Doctor\nAppointment App',
-            style: Styles.font32BlueW700.copyWith(height: 1.2),
+            S.of(context).onBordingDetailsText,
+            style: Styles.font32BlueW700(context).copyWith(height: 1.2),
             textAlign: TextAlign.center,
           ),
         ),
