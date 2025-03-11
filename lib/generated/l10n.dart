@@ -54,8 +54,6 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
-<<<<<<< HEAD
-=======
 
   /// `Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.`
   String get onBordingHeadText {
@@ -256,21 +254,16 @@ class S {
   String get gotIt {
     return Intl.message('Got it', name: 'gotIt', desc: '', args: []);
   }
->>>>>>> af48f335dded8633e36c10544971c80748af9bea
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   const AppLocalizationDelegate();
 
   List<Locale> get supportedLocales {
-<<<<<<< HEAD
-    return const <Locale>[Locale.fromSubtags(languageCode: 'en')];
-=======
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en'),
       Locale.fromSubtags(languageCode: 'ar'),
     ];
->>>>>>> af48f335dded8633e36c10544971c80748af9bea
   }
 
   @override
