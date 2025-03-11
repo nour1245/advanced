@@ -1,7 +1,10 @@
+import 'package:advanced/core/helpers/extensions.dart';
+import 'package:advanced/core/routing/routes.dart';
 import 'package:advanced/core/themeing/styles.dart';
+import 'package:advanced/core/widgets/app_text_button.dart';
 import 'package:advanced/features/onboarding/widgets/doctor_image_and_text.dart';
-import 'package:advanced/features/onboarding/widgets/get_started_button.dart';
 import 'package:advanced/features/onboarding/widgets/logo_and_name.dart';
+import 'package:advanced/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -25,15 +28,19 @@ class OnboardingScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
-                        style: Styles.font13GrayW400,
+                        S.of(context).onBordingHeadText,
+                        style: Styles.font13GrayW400(context),
                         textAlign: TextAlign.center,
                       ),
                     ],
                   ),
                 ),
                 SizedBox(height: 30.h),
-                const GetStartedButton(),
+                AppTextButton(
+                  buttonText: S.of(context).onBordingButtonText,
+                  textStyle: Styles.buttonTextStyle(context),
+                  onPressed: () => context.pushNamed(Routes.loginScreen),
+                ),
               ],
             ),
           ),
