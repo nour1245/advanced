@@ -54,13 +54,223 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+<<<<<<< HEAD
+=======
+
+  /// `Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.`
+  String get onBordingHeadText {
+    return Intl.message(
+      'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
+      name: 'onBordingHeadText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Best Doctor\nAppointment App`
+  String get onBordingDetailsText {
+    return Intl.message(
+      'Best Doctor\nAppointment App',
+      name: 'onBordingDetailsText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get Started`
+  String get onBordingButtonText {
+    return Intl.message(
+      'Get Started',
+      name: 'onBordingButtonText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get loginButtonText {
+    return Intl.message('Login', name: 'loginButtonText', desc: '', args: []);
+  }
+
+  /// `We're excited to have you back, can't wait to see what you've been up to since you last logged in.`
+  String get loginWellcomeText {
+    return Intl.message(
+      'We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in.',
+      name: 'loginWellcomeText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get emailHint {
+    return Intl.message('Email', name: 'emailHint', desc: '', args: []);
+  }
+
+  /// `Password`
+  String get passwordHint {
+    return Intl.message('Password', name: 'passwordHint', desc: '', args: []);
+  }
+
+  /// `Forgot Password?`
+  String get forgetPassword {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome Back`
+  String get loginWellcomeBack {
+    return Intl.message(
+      'Welcome Back',
+      name: 'loginWellcomeBack',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By logging, you agree to our `
+  String get loginAgrees1 {
+    return Intl.message(
+      'By logging, you agree to our ',
+      name: 'loginAgrees1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms & Conditions `
+  String get loginAgrees2 {
+    return Intl.message(
+      'Terms & Conditions ',
+      name: 'loginAgrees2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `and `
+  String get loginAgrees3 {
+    return Intl.message('and ', name: 'loginAgrees3', desc: '', args: []);
+  }
+
+  /// `PrivacyPolicy`
+  String get loginAgrees4 {
+    return Intl.message(
+      'PrivacyPolicy',
+      name: 'loginAgrees4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dosen't have an account yet? `
+  String get dosentHaveAccount {
+    return Intl.message(
+      'Dosen\'t have an account yet? ',
+      name: 'dosentHaveAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get signUp {
+    return Intl.message('Sign Up', name: 'signUp', desc: '', args: []);
+  }
+
+  /// `At least 1 lowercase letter`
+  String get hasLowerCase {
+    return Intl.message(
+      'At least 1 lowercase letter',
+      name: 'hasLowerCase',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 1 uppercase letter`
+  String get hasUpperCase {
+    return Intl.message(
+      'At least 1 uppercase letter',
+      name: 'hasUpperCase',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 1 number`
+  String get hasNumbers {
+    return Intl.message(
+      'At least 1 number',
+      name: 'hasNumbers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 8 character long`
+  String get hasMinLength {
+    return Intl.message(
+      'At least 8 character long',
+      name: 'hasMinLength',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At least 1 special character`
+  String get hasSpecial {
+    return Intl.message(
+      'At least 1 special character',
+      name: 'hasSpecial',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pleas Enter a Valid Email`
+  String get emailValidate {
+    return Intl.message(
+      'Pleas Enter a Valid Email',
+      name: 'emailValidate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pleas Enter a Valid Password`
+  String get passwordValidate {
+    return Intl.message(
+      'Pleas Enter a Valid Password',
+      name: 'passwordValidate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Got it`
+  String get gotIt {
+    return Intl.message('Got it', name: 'gotIt', desc: '', args: []);
+  }
+>>>>>>> af48f335dded8633e36c10544971c80748af9bea
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   const AppLocalizationDelegate();
 
   List<Locale> get supportedLocales {
+<<<<<<< HEAD
     return const <Locale>[Locale.fromSubtags(languageCode: 'en')];
+=======
+    return const <Locale>[
+      Locale.fromSubtags(languageCode: 'en'),
+      Locale.fromSubtags(languageCode: 'ar'),
+    ];
+>>>>>>> af48f335dded8633e36c10544971c80748af9bea
   }
 
   @override
