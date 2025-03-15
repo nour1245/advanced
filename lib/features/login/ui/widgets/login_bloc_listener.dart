@@ -33,7 +33,7 @@ class LoginBlocListener extends StatelessWidget {
                   ),
             );
           },
-          success: (data) {
+          success: (loginResponse) {
             context.pop();
             context.pushNamed('homeScreen');
           },
@@ -43,7 +43,7 @@ class LoginBlocListener extends StatelessWidget {
           },
         );
       },
-      child: Container(),
+      child: const SizedBox.shrink(),
     );
   }
 

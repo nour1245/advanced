@@ -254,16 +254,148 @@ class S {
   String get gotIt {
     return Intl.message('Got it', name: 'gotIt', desc: '', args: []);
   }
+
+  /// `Already have an account?`
+  String get haveAccount {
+    return Intl.message(
+      'Already have an account?',
+      name: 'haveAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message('Name', name: 'name', desc: '', args: []);
+  }
+
+  /// `Please enter a valid name`
+  String get validName {
+    return Intl.message(
+      'Please enter a valid name',
+      name: 'validName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone number`
+  String get phoneNumber {
+    return Intl.message(
+      'Phone number',
+      name: 'phoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid phone number`
+  String get validPhone {
+    return Intl.message(
+      'Please enter a valid phone number',
+      name: 'validPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Account`
+  String get createAccount {
+    return Intl.message(
+      'Create Account',
+      name: 'createAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid email`
+  String get validEmail {
+    return Intl.message(
+      'Please enter a valid email',
+      name: 'validEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter a valid password`
+  String get validPassword {
+    return Intl.message(
+      'Please enter a valid password',
+      name: 'validPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Signup Successful`
+  String get signupSuccessful {
+    return Intl.message(
+      'Signup Successful',
+      name: 'signupSuccessful',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Congratulations, you have signed up successfully!`
+  String get congratulations {
+    return Intl.message(
+      'Congratulations, you have signed up successfully!',
+      name: 'congratulations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue`
+  String get continueText {
+    return Intl.message('Continue', name: 'continueText', desc: '', args: []);
+  }
+
+  /// `Got it`
+  String get GotIt {
+    return Intl.message('Got it', name: 'GotIt', desc: '', args: []);
+  }
+
+  /// `Password Confirmation`
+  String get passwordConfirm {
+    return Intl.message(
+      'Password Confirmation',
+      name: 'passwordConfirm',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message('Email', name: 'email', desc: '', args: []);
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message('Password', name: 'password', desc: '', args: []);
+  }
+
+  /// `Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!`
+  String get signupNow {
+    return Intl.message(
+      'Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!',
+      name: 'signupNow',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   const AppLocalizationDelegate();
 
   List<Locale> get supportedLocales {
-    return const <Locale>[
-      Locale.fromSubtags(languageCode: 'en'),
-      Locale.fromSubtags(languageCode: 'ar'),
-    ];
+    return const <Locale>[Locale.fromSubtags(languageCode: 'en')];
   }
 
   @override
