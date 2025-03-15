@@ -22,9 +22,16 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "GotIt": MessageLookupByLibrary.simpleMessage("Got it"),
+    "congratulations": MessageLookupByLibrary.simpleMessage(
+      "Congratulations, you have signed up successfully!",
+    ),
+    "continueText": MessageLookupByLibrary.simpleMessage("Continue"),
+    "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "dosentHaveAccount": MessageLookupByLibrary.simpleMessage(
       "Dosen\'t have an account yet? ",
     ),
+    "email": MessageLookupByLibrary.simpleMessage("Email"),
     "emailHint": MessageLookupByLibrary.simpleMessage("Email"),
     "emailValidate": MessageLookupByLibrary.simpleMessage(
       "Pleas Enter a Valid Email",
@@ -44,6 +51,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "hasUpperCase": MessageLookupByLibrary.simpleMessage(
       "At least 1 uppercase letter",
     ),
+    "haveAccount": MessageLookupByLibrary.simpleMessage(
+      "Already have an account?",
+    ),
     "loginAgrees1": MessageLookupByLibrary.simpleMessage(
       "By logging, you agree to our ",
     ),
@@ -55,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "loginWellcomeText": MessageLookupByLibrary.simpleMessage(
       "We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in.",
     ),
+    "name": MessageLookupByLibrary.simpleMessage("Name"),
     "onBordingButtonText": MessageLookupByLibrary.simpleMessage("Get Started"),
     "onBordingDetailsText": MessageLookupByLibrary.simpleMessage(
       "Best Doctor\nAppointment App",
@@ -62,10 +73,33 @@ class MessageLookup extends MessageLookupByLibrary {
     "onBordingHeadText": MessageLookupByLibrary.simpleMessage(
       "Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.",
     ),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "passwordConfirm": MessageLookupByLibrary.simpleMessage(
+      "Password Confirmation",
+    ),
     "passwordHint": MessageLookupByLibrary.simpleMessage("Password"),
     "passwordValidate": MessageLookupByLibrary.simpleMessage(
       "Pleas Enter a Valid Password",
     ),
+    "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone number"),
     "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
+    "signupNow": MessageLookupByLibrary.simpleMessage(
+      "Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!",
+    ),
+    "signupSuccessful": MessageLookupByLibrary.simpleMessage(
+      "Signup Successful",
+    ),
+    "validEmail": MessageLookupByLibrary.simpleMessage(
+      "Please enter a valid email",
+    ),
+    "validName": MessageLookupByLibrary.simpleMessage(
+      "Please enter a valid name",
+    ),
+    "validPassword": MessageLookupByLibrary.simpleMessage(
+      "Please enter a valid password",
+    ),
+    "validPhone": MessageLookupByLibrary.simpleMessage(
+      "Please enter a valid phone number",
+    ),
   };
 }

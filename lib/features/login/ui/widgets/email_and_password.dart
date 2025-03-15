@@ -2,8 +2,6 @@ import 'package:advanced/core/helpers/regx.dart';
 import 'package:advanced/core/helpers/spacing.dart';
 import 'package:advanced/core/widgets/app_text_form_field.dart';
 import 'package:advanced/features/login/logic/cubit/login_cubit.dart';
-import 'package:advanced/features/login/widgets/login_bloc_listener.dart';
-import 'package:advanced/features/login/widgets/password_validation.dart';
 import 'package:advanced/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -27,7 +25,6 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
   void initState() {
     super.initState();
     passwordController = context.read<LoginCubit>().passwordController;
-    setupPasswordControllerListener();
   }
 
   @override
@@ -56,7 +53,7 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
           verticalSpace(16),
           AppTextFormField(
             validator: (value) {
-              if (value == null || value.isEmpty|| !AppRegex.isPasswordValid(value)) {
+              if (value == null || value.isEmpty) {
                 return S.of(context).passwordValidate;
               }
             },
@@ -74,30 +71,9 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
             ),
             isObscureText: isObscureText,
           ),
-          PasswordValidation(
-            hasUpperCase: hasUpperCase,
-            hasLowerCase: hasLowerCase,
-            hasMinLength: hasMinLength,
-            hasNumbers: hasNumbers,
-            hasSpecialCharacter: hasSpecialCharacter,
-          ),
-          
+
         ],
       ),
     );
-  }
-
-  void setupPasswordControllerListener() {
-    passwordController.addListener(() {
-      setState(() {
-        hasLowerCase = AppRegex.hasLowerCase(passwordController.text);
-        hasMinLength = AppRegex.hasMinLength(passwordController.text);
-        hasNumbers = AppRegex.hasNumber(passwordController.text);
-        hasSpecialCharacter = AppRegex.hasSpecialCharacter(
-          passwordController.text,
-        );
-        hasUpperCase = AppRegex.hasUpperCase(passwordController.text);
-      });
-    });
   }
 }

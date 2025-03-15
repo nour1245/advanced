@@ -12,8 +12,25 @@ class Styles {
             : Colors.black,
   );
 
-  static TextStyle darkBlue15_400w(BuildContext context) => TextStyle(
+  static TextStyle font16White_400w(BuildContext context) => TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+    color:
+        Theme.of(context).brightness == Brightness.dark
+            ? ColorsManager.darkMainBlue
+            : Colors.white,
+  );
+  static TextStyle font14Gray400(BuildContext context) => TextStyle(
     fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+    color:
+        Theme.of(context).brightness == Brightness.dark
+            ? ColorsManager.lightMainGray
+            : ColorsManager.darkLightGray,
+  );
+
+  static TextStyle darkBlue15_400w(BuildContext context) => TextStyle(
+    fontSize: 15.sp,
     fontWeight: FontWeight.w400,
     color:
         Theme.of(context).brightness == Brightness.dark
