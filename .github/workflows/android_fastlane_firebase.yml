@@ -38,9 +38,6 @@ jobs:
         ruby-version: "3.3.7"
         bundler-cache: true
         working-directory: android
-
-    - name: Accept Android SDK licenses
-      run: yes | sdkmanager --licenses
       
     - name: Build and Distribute App
       env:
