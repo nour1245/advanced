@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 extension Navigation on BuildContext {
@@ -12,17 +13,26 @@ extension Navigation on BuildContext {
   }
 
   Future<dynamic> pushNamedAndRemoveUntil(
-    String newRouteName, {
+    String routeName, {
     Object? arguments,
+    required RoutePredicate predicate,
   }) {
-    return Navigator.of(this).pushNamedAndRemoveUntil(
-      newRouteName,
-      (route) => false,
-      arguments: arguments,
-    );
+    return Navigator.of(
+      this,
+    ).pushNamedAndRemoveUntil(routeName, predicate, arguments: arguments);
   }
 
-  void pop() {
-    return Navigator.of(this).pop();
-  }
+  void pop() => Navigator.of(this).pop();
+}
+
+extension StringExtension on String? {
+  bool isNullOrEmpty() => this == null || this == "";
+}
+
+extension ListExtension<T> on List<T>? {
+  bool isNullOrEmpty() => this == null || this!.isEmpty;
+}
+
+extension MapExtension<K, V> on Map<K, V>? {
+  bool isNullOrEmpty() => this == null || this!.isEmpty;
 }

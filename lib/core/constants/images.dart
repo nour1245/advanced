@@ -1,0 +1,1 @@
+const String docLogo='assets/svgs/docDoc_logo.svg';
