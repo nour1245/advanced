@@ -1,0 +1,30 @@
+default_platform(:android)
+
+platform :android do
+  desc "Firebase App Distribution for development"
+  lane :firebase_dis_dev do
+    sh "flutter clean"
+    sh "flutter build apk --release --flavor development --target lib/main_development.dart --no-tree-shake-icons"
+    firebase_app_distribution(
+    app: "1:751314248069:android:34dc317bb4f8b8cd6924ec",
+    firebase_cli_token:"1//03_IFhVNNbMdSCgYIARAAGAMSNwF-L9IrLJosOOK5hxELKGMsRFceDEEiaKmnQj6Nuc_mY0I4xdESMG2lJrKcRoXcVc0CVHNlw5U",
+    android_artifact_type:"APK",
+    android_artifact_path:"../build/app/outputs/flutter-apk/app-development-release.apk",
+    testers:"aldennour62@gmail.com",
+    release_notes:"First FAst Lane test for dev"
+  )
+  end
+  desc "Firebase App Distribution for production"
+  lane :firebase_dis_prod do
+    sh "flutter clean"
+    sh "flutter build apk --release --flavor production --target lib/main_production.dart --no-tree-shake-icons"
+    firebase_app_distribution(
+    app: "1:424577559544:android:42942a8bb8f5d8fe26840d",
+    firebase_cli_token:"1//03_IFhVNNbMdSCgYIARAAGAMSNwF-L9IrLJosOOK5hxELKGMsRFceDEEiaKmnQj6Nuc_mY0I4xdESMG2lJrKcRoXcVc0CVHNlw5U",
+    android_artifact_type:"APK",
+    android_artifact_path:"../build/app/outputs/flutter-apk/app-production-release.apk",
+    testers:"aldennour62@gmail.com",
+    release_notes:"First FAst Lane test for production"
+  )
+  end
+end

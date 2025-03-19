@@ -389,6 +389,11 @@ class S {
       args: [],
     );
   }
+
+  /// `DocDoc`
+  String get docDoc {
+    return Intl.message('DocDoc', name: 'docDoc', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
