@@ -38,5 +38,6 @@
         "passwordConfirm":"Password Confirmation",
         "email":"Email",
         "password":"Password",
-        "signupNow":"Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!"
+        "signupNow":"Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!",
+        "docDoc":"DocDoc"
 }

@@ -28,6 +28,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "continueText": MessageLookupByLibrary.simpleMessage("Continue"),
     "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+    "docDoc": MessageLookupByLibrary.simpleMessage("DocDoc"),
     "dosentHaveAccount": MessageLookupByLibrary.simpleMessage(
       "Dosen\'t have an account yet? ",
     ),
