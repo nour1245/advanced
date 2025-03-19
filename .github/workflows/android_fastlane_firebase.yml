@@ -18,6 +18,15 @@ jobs:
         java-version: '18'
         distribution: 'temurin'
     
+    - name: Install Android SDK
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget unzip
+        wget https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip -O cmdline-tools.zip
+        unzip cmdline-tools.zip -d $HOME/
+        mkdir -p $ANDROID_HOME/cmdline-tools
+        mv $HOME/cmdline-tools $ANDROID_HOME/cmdline-tools/latest
+        yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
     - name: Install Flutter
       uses: subosito/flutter-action@v2
       with:
