@@ -17,6 +17,10 @@ jobs:
       with:
         java-version: '18'
         distribution: 'temurin'
+
+    - name: Accept Licenses
+      run: |
+        yes | sdkmanager --licenses
     
     - name: Install Flutter
       uses: subosito/flutter-action@v2
