@@ -32,7 +32,7 @@ class DocApp extends StatelessWidget {
         ),
         title: 'Doc App',
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.onboardingScreen,
+        initialRoute: Routes.homeScreen,
         onGenerateRoute: appRouter.gnerateRoute,
       ),
     );

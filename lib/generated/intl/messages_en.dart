@@ -23,6 +23,9 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "GotIt": MessageLookupByLibrary.simpleMessage("Got it"),
+    "book": MessageLookupByLibrary.simpleMessage(
+      " Book and\nschedule with\nnearest doctor",
+    ),
     "congratulations": MessageLookupByLibrary.simpleMessage(
       "Congratulations, you have signed up successfully!",
     ),
@@ -37,6 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "emailValidate": MessageLookupByLibrary.simpleMessage(
       "Pleas Enter a Valid Email",
     ),
+    "findNearby": MessageLookupByLibrary.simpleMessage("Find Nearby"),
     "forgetPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "gotIt": MessageLookupByLibrary.simpleMessage("Got it"),
     "hasLowerCase": MessageLookupByLibrary.simpleMessage(
@@ -55,6 +59,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "haveAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
+    "hi": MessageLookupByLibrary.simpleMessage("Hi"),
+    "howRU": MessageLookupByLibrary.simpleMessage("How Are You Today?"),
     "loginAgrees1": MessageLookupByLibrary.simpleMessage(
       "By logging, you agree to our ",
     ),
@@ -83,6 +89,10 @@ class MessageLookup extends MessageLookupByLibrary {
       "Pleas Enter a Valid Password",
     ),
     "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone number"),
+    "recommendation": MessageLookupByLibrary.simpleMessage(
+      "Doctor Recommendation",
+    ),
+    "seeAll": MessageLookupByLibrary.simpleMessage("See All"),
     "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
     "signupNow": MessageLookupByLibrary.simpleMessage(
       "Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!",
@@ -90,6 +100,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "signupSuccessful": MessageLookupByLibrary.simpleMessage(
       "Signup Successful",
     ),
+    "specialty": MessageLookupByLibrary.simpleMessage("Doctor\'s specialty"),
     "validEmail": MessageLookupByLibrary.simpleMessage(
       "Please enter a valid email",
     ),

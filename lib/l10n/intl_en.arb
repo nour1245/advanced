@@ -39,5 +39,12 @@
         "email":"Email",
         "password":"Password",
         "signupNow":"Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!",
-        "docDoc":"DocDoc"
+        "docDoc":"DocDoc",
+        "hi":"Hi",
+        "howRU":"How Are You Today?",
+        "book":" Book and\nschedule with\nnearest doctor",
+        "findNearby":"Find Nearby",
+        "specialty":"Doctor's specialty",
+        "seeAll":"See All",
+        "recommendation":"Doctor Recommendation"
 }

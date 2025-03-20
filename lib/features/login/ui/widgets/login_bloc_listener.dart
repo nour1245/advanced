@@ -1,4 +1,5 @@
 import 'package:advanced/core/helpers/extensions.dart';
+import 'package:advanced/core/routing/routes.dart';
 import 'package:advanced/core/themeing/colors.dart';
 import 'package:advanced/core/themeing/styles.dart';
 import 'package:advanced/features/login/logic/cubit/login_cubit.dart';
@@ -35,7 +36,7 @@ class LoginBlocListener extends StatelessWidget {
           },
           success: (loginResponse) {
             context.pop();
-            context.pushNamed('homeScreen');
+            context.pushNamed(Routes.homeScreen);
           },
           error: (error) {
             context.pop();

@@ -394,6 +394,61 @@ class S {
   String get docDoc {
     return Intl.message('DocDoc', name: 'docDoc', desc: '', args: []);
   }
+
+  /// `Hi`
+  String get hi {
+    return Intl.message('Hi', name: 'hi', desc: '', args: []);
+  }
+
+  /// `How Are You Today?`
+  String get howRU {
+    return Intl.message(
+      'How Are You Today?',
+      name: 'howRU',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Book and\nschedule with\nnearest doctor`
+  String get book {
+    return Intl.message(
+      ' Book and\nschedule with\nnearest doctor',
+      name: 'book',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Find Nearby`
+  String get findNearby {
+    return Intl.message('Find Nearby', name: 'findNearby', desc: '', args: []);
+  }
+
+  /// `Doctor's specialty`
+  String get specialty {
+    return Intl.message(
+      'Doctor\'s specialty',
+      name: 'specialty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See All`
+  String get seeAll {
+    return Intl.message('See All', name: 'seeAll', desc: '', args: []);
+  }
+
+  /// `Doctor Recommendation`
+  String get recommendation {
+    return Intl.message(
+      'Doctor Recommendation',
+      name: 'recommendation',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
