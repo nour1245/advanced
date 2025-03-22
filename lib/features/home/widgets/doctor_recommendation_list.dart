@@ -7,15 +7,17 @@ class DoctorRecommendationList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: MediaQuery.of(context).size.width,
-      height: 100.h,
-      child: ListView.builder(
-        scrollDirection: Axis.vertical,
-        itemCount: 5,
-        itemBuilder: (context, index) {
-          return DoctorRecommendationListItem();
-        },
+    return Expanded(
+      child: SizedBox(
+        width: MediaQuery.of(context).size.width,
+        height: 100.h,
+        child: ListView.builder(
+          scrollDirection: Axis.vertical,
+          itemCount: 5,
+          itemBuilder: (context, index) {
+            return DoctorRecommendationListItem();
+          },
+        ),
       ),
     );
   }

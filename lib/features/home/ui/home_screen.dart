@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
               SpecialityList(),
               verticalSpace(14.h),
               ListTitle(title: S.of(context).recommendation, onTap: () {}),
-              Expanded(child: DoctorRecommendationList()),
+              DoctorRecommendationList(),
               HomeScreenNavigationBar(),
             ],
           ),

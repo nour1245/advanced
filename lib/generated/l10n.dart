@@ -410,10 +410,10 @@ class S {
     );
   }
 
-  /// ` Book and\nschedule with\nnearest doctor`
+  /// `Book and\nschedule with\nnearest doctor`
   String get book {
     return Intl.message(
-      ' Book and\nschedule with\nnearest doctor',
+      'Book and\nschedule with\nnearest doctor',
       name: 'book',
       desc: '',
       args: [],
